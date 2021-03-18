@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    
+}
+
+h2{
+    color: #658ec6;
+    font-weight: bold;
+    font-size: 14pt;
+    opacity: 0.8;
+
+
+}
+p{
+
+    color: #658ec6;
+}
+
+/*for main which is the bg */
+main{
+    font-family: "poppins",sans-serif;
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right top,#65dfc9,#6cdbed);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.glass{
+    background: white;                              
+    height: 90vh;
+    width: 60%  ;
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.6),rgba(255,255,255,0.3));
+    border-radius: 2em;
+    z-index: 3;
+    backdrop-filter: blur(50px);
+    display: flex;
+}
+.circle1,.circle2{
+    background: white; 
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.9),rgba(255,255,255,0.1));
+    height: 18em;
+    width: 18em;
+    position: absolute;
+    top: 5%;
+  
+}
+.circle1{
+    top: 60% ;
+    left: 10%;
+    border-radius: 50%;
+    z-index: 2;
+}
+.circle2{
+    top: 5% ;
+    right: 10%;
+    border-radius: 50%;
+    z-index: 1;
+    
+
+}
+.dash{
+    
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center ;
+    
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.6),rgba(255,255,255,0.3));
+    border-radius: 2em;
+    
+
+}
+
+.games{
+    flex: 2;
+
+}
+
+.links{
+    
+}
+.link{
+    display: flex;
+    padding: 20px 15px;
+    align-content: center;
+    
+}
+
+.link h2{
+    font-size: 14pt;
+    font-weight: bold;
+    padding: 0 2rem;
+}
+
+.user{
+    
+    
+}
+.pro{
+    display: flex;
+    background: linear-gradient(to right top,#65dfc9,#6cdbed);
+    border-radius: 2rem;
+    width:95%;
+    
+
+}
+.pro:hover{
+    -webkit-transition: color 2s linear;
+    -moz-transition: color 2s linear;
+    -ms-transition: color 2s linear;
+    -o-transition: color 2s linear;
+    
+    background: linear-gradient(to right top,#083b32,#026474);
+    transition: color 2s linear
+
+}
+.pro img{
+   
+   margin-top: -30px;
+}
+.pro h1{
+    font-size: 14pt;
+    color: white;
+    font-weight: bold;
+    width: 40%;
+    padding: 10px 10px;
+}
+
+
+/* games */
+
+.search h1{
+    color: #0d7ce4;
+    font-weight: 600;
+    font-size: 2rem;
+    opacity: 0.8;
+}
+
+.search{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    
+}
+.search input{
+    width: 60%;
+    border: none;
+    border-radius: 2rem;
+    background: linear-gradient(to top left,rgba(255,255,255,0.2),rgba(255,255,255,0.5));
+    padding: 5px;
+}
+.games{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card{
+    display: flex;
+    background: linear-gradient(to top left,rgba(255,255,255,0.5),rgba(255,255,255,0.1));
+    border-radius: 1rem;
+    margin: 2rem 0;
+    padding: 10px;
+    box-shadow: 6px 6px 20px rgba(122,122,122,0.21);
+    justify-content: space-between;
+}
+
+.card:hover{
+    background: rgb(206, 206, 206);
+}
+.progress1,.progress2,.progress3{
+    background: linear-gradient(to right top,#65dfc9,#6cdbed);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.cardinfo{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+.cardinfo p{
+    margin-top: 5px;
+}
+.per{
+    background: linear-gradient(to right top,#65dfc9,#6cdbed);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.progress1::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(160, 159, 159);
+    position: absolute;
+    left: 60%;
+    
+}
+.progress2::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(160, 159, 159);
+    position: absolute;
+    left: 40%;
+    
+}
+.progress3::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(160, 159, 159);
+    position: absolute;
+    left: 80%;
+    
+}
+.search input:focus{
+    box-decoration-break: unset;
+}
